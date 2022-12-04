@@ -49,21 +49,21 @@ function informacion(id, div) {
         if (this.readyState == 4 && this.status == 200) {
             datosPlus = JSON.parse(xhttp.responseText);
             const pDirector = document.createElement("p");
-            const pLanguaje = document.createElement("p");
+            const pLanguage = document.createElement("p");
             const pPlot = document.createElement("p");
             const pReleased = document.createElement("p");
             const pYear = document.createElement("p");
             const pType = document.createElement("p");
             const hr = document.createElement("hr");
             div.appendChild(pDirector);
-            div.appendChild(pLanguaje);
+            div.appendChild(pLanguage);
             div.appendChild(pReleased);
             div.appendChild(pYear);
             div.appendChild(pType);
             div.appendChild(hr);
             div.appendChild(pPlot);
             pDirector.innerHTML = "Director: " + datosPlus.Director;
-            pLanguaje.innerHTML = "Languaje: " + datosPlus.Languaje;
+            pLanguage.innerHTML = "Language: " + datosPlus.Language;
             pReleased.innerHTML = "Released: " + datosPlus.Released;
             pYear.innerHTML = "Year: " + datosPlus.Year;
             pType.innerHTML = "Type: " + datosPlus.Type;
