@@ -35,6 +35,7 @@ function loadDoc() {
                     for (i = 0; i < document.getElementsByClassName("div--demo").length; i++) {
                         document.getElementsByClassName("div--demo")[i].remove();
                         document.getElementById("input").value = "";
+                        pagina = 1;
                     }
                 })
             }
